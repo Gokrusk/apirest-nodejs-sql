@@ -1,4 +1,4 @@
-import { getConnection, sql, queries } from '../database'
+import { getConnection, sql, queries } from '../database/index.js'
 
 export const getAllProducts = async (req, res) => {
 
@@ -42,7 +42,7 @@ export const countProduct = async (req, res) => {
         const pool = await getConnection()
         const result = await pool
             .request()
-            .query(queries.countProduct)
+            .query(parseInt(queries.countProduct))
 
         res.json(result.recordset[0][''])
 
