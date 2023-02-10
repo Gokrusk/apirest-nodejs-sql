@@ -36,13 +36,13 @@ export const getProductById = async (req, res) => {
     }
 }
 
-export const countProduct = async (req, res) => {
+export const countProducts = async (req, res) => {
 
     try {
         const pool = await getConnection()
         const result = await pool
             .request()
-            .query(parseInt(queries.countProduct))
+            .query(queries.countProducts)
 
         res.json(result.recordset[0][''])
 
