@@ -3,8 +3,8 @@ import sql from 'mssql'
 const dbSettings = {
     user: process.env.USER,
     password: process.env.PSWD,
-    server: "localhost",
-    database: "DBTEST",
+    server: process.env.SERVER,
+    database: process.env.DB,
     options: {
         encrypt: true, // for azure
         trustServerCertificate: true // change to true for local dev / self-signed certs
