@@ -1,4 +1,4 @@
-# API REST with NodeJS and SQL
+# API REST with NodeJS and MSSQL
 
 ## Description
 Backend app using Microsoft SQL SERVER and NodeJS
